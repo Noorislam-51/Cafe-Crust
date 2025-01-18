@@ -5,7 +5,7 @@ import Header from './Header'
 function FirstPage() {
   return (
     <>
-      <div id='page1'>
+      <div id='FirstPage'>
         <Header />
         <div className='section1' id='home'>
           <div className='intro'>

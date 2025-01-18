@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import FirstPage from './Component/FirstPage'
 import SecondPage from './Component/SecondPage'
+import ThirdPage from './Component/ThirdPage'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
     <FirstPage/>
     <SecondPage/>
+    <ThirdPage/>
     </>
 
   )
