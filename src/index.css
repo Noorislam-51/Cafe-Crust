@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* General Reset */
-body, h1, ul, li {
+body,
+h1,
+ul,
+li {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f1e9; 
+  background-color: #f4f1e9;
   color: #333;
 }
 
@@ -23,7 +25,8 @@ body {
   padding: 10px 50px;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  position: sticky; /* Keeps the header fixed at the top */
+  position: sticky;
+  /* Keeps the header fixed at the top */
   top: 0;
   z-index: 10;
 }
@@ -31,7 +34,8 @@ body {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #6a4c3b; /* Coffee brown */
+  color: #6a4c3b;
+  /* Coffee brown */
 }
 
 .nav {
@@ -59,7 +63,8 @@ body {
 }
 
 .nav-link:hover {
-  color: #c96542; /* Highlight color on hover */
+  color: #c96542;
+  /* Highlight color on hover */
 }
 
 .search {
@@ -77,28 +82,31 @@ body {
 
 .search-input:focus {
   outline: none;
-  border-color: #6a4c3b; /* Coffee brown */
+  border-color: #6a4c3b;
+  /* Coffee brown */
 }
 
-/* --------x------------x-------x-----------x-----------x-----------------*/
+/* --------x------------x-------x-----------x-----------x----------------- */
 
 /* Page1 Section */
-.page1{
+.page1 {
   height: 100vh;
-
 }
+
 .section1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  height: calc( 85vh - 80px); /* Adjust height to account for the header */
-  background-color: #121212; /* Warm coffee shade */
+  height: calc(85vh - 80px);
+  /* Adjust height to account for the header */
+  background-color: #121212;
+  /* Warm coffee shade */
 }
 
 .intro {
   flex: 1;
-  padding: 100px
+  padding: 100px;
 }
 
 .intro h1 {
@@ -125,18 +133,15 @@ body {
   border-radius: 10px;
 }
 
-
-/* icon section */
-
+/* Icon Section */
 .icon-section {
-   background-color: rgb(226, 217, 200);
+  background-color: rgb(226, 217, 200);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh-(85vh - 80px));
+  height: calc(100vh - (85vh - 80px));
   gap: 100px;
   padding: 40px 0;
-
 }
 
 .icon-item {
@@ -144,7 +149,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #6F4E37; /* Coffee Brown */
+  color: #6F4E37;
+  /* Coffee Brown */
 }
 
 .icon-item i {
@@ -155,12 +161,17 @@ body {
 .icon-item p {
   font-size: 14px;
   font-weight: 500;
-  color: #333333; /* Dark Gray */
+  color: #333333;
+  /* Dark Gray */
 }
 
 .icon-item:hover i {
-  color: #FFD700; /* Golden color on hover */
-  transform: scale(1.1); /* Slight enlargement on hover */
+  color: #FFD700;
+  /* Golden color on hover */
+  transform: scale(1.1);
+  /* Slight enlargement on hover */
 }
 
 /* --------x------------x-------x-----------x-----------x---------------------- */
+
+/* Coffee Menu Section */
