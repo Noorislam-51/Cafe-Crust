@@ -14,12 +14,14 @@ function FirstPage() {
               in the city</h1>
           </div>
           <div className='intropic'>
-            <img src="https://cdni.iconscout.com/illustration/premium/thumb/waiter-and-waitress-holding-a-tray-with-coffee-illustration-download-in-svg-png-gif-file-formats--serving-tea-pack-people-illustrations-5417942.png" alt="Italian Trulli" />
+            {/* <img src="https://cdni.iconscout.com/illustration/premium/thumb/waiter-and-waitress-holding-a-tray-with-coffee-illustration-download-in-svg-png-gif-file-formats--serving-tea-pack-people-illustrations-5417942.png" alt="Italian Trulli" /> */}
           </div>
+          
         </div>
         
+
         <div class="icon-section">
-          <div class="icon-item"> 
+          <div class="icon-item">
             <i class="fas fa-mug-hot"></i>
             <p>Hot Coffee</p>
           </div>
@@ -36,6 +38,7 @@ function FirstPage() {
             <p>Dessert</p>
           </div>
         </div>
+        
 
       </div>
 
