@@ -103,17 +103,23 @@ const SecondPage = () => {
   ];
 
 
-  const [showAll, setShowAll] = useState(false);
+  const [showAllCoffee, setShowAllCoffee] = useState(false);
+  const [showAllBakery, setShowAllBakery] = useState(false);
 
-  const toggleCards = () => {
-    setShowAll(!showAll);
+  const toggleCoffeeCards = () => {
+    setShowAllCoffee(!showAllCoffee);
   };
 
-  let displayedCoffeeCards = showAll ? coffeeMenu : coffeeMenu.slice(0, 4);
-  let displayedBakeryCards = showAll ? bakeryMenu : bakeryMenu.slice(0, 4);
+  const toggleBakeryCards = () => {
+    setShowAllBakery(!showAllBakery);
+  };
+
+  const displayedCoffeeCards = showAllCoffee ? coffeeMenu : coffeeMenu.slice(0, 4);
+  const displayedBakeryCards = showAllBakery ? bakeryMenu : bakeryMenu.slice(0, 4);
 
   return (
     <>
+      {/* Coffee menu */}
       <div id='CoffeePage'>
         <h3 className="menu-title">OUR SPECIAL DISH</h3>
         <div className="coffee-menu">
@@ -131,8 +137,8 @@ const SecondPage = () => {
             ))}
           </div>
         </div>
-        <button onClick={toggleCards}>
-          {showAll ? 'Show Less' : 'Show More'}
+        <button className='showmoreButton' onClick={toggleCoffeeCards}>
+          {showAllCoffee ? 'Show Less' : 'Show More'}
         </button>
       </div>
 
@@ -154,19 +160,18 @@ const SecondPage = () => {
             ))}
           </div>
         </div>
-        <button onClick={toggleCards}>
-          {showAll ? 'Show Less' : 'Show More'}
+        <button className='showmoreButton' onClick={toggleBakeryCards}>
+          {showAllBakery ? 'Show Less' : 'Show More'}
         </button>
       </div>
 
-      <div class="icon-section">
-        <div class="icon-item">
-          <i class="fas fa-mug-hot"></i>
-          <p>Hot Coffee</p>
+      <div className="icon-section">
+        <div className="icon-item">
+          <i className="fas fa-mug-hot"></i>
+          <h1>Join in and get 15% Off!</h1>
+          <p></p>
         </div>
-
       </div>
-
     </>
   );
 };

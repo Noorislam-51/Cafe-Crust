@@ -119,16 +119,16 @@ body {
 
 .intro {
   flex: 1;
-  padding: 100px;
+  padding:100px;
 }
 
 .intro h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #ffffff;
 }
 
 .intro h1 span {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #ffffff;
   display: block;
 }
@@ -148,13 +148,15 @@ body {
 
 /* Icon Section */
 .icon-section {
-  background-color: rgb(226, 217, 200);
+  background-color: #f0f0f0; /* Lighter background for contrast */
   display: flex;
   justify-content: center;
   align-items: center;
   height: calc(100vh - (85vh - 80px));
-  gap: 100px;
-  padding: 15px 0;
+  gap: 60px; /* Slightly reduced gap for a tighter layout */
+  padding: 10px 0; /* Increased padding for spacing */
+  border-radius: 15px; /* Rounded corners for a modern look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .icon-item {
@@ -162,25 +164,37 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #6F4E37;
-  /* Coffee Brown */
+  color: #6F4E37; /* Coffee Brown */
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-item i {
-  font-size: 30px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 36px; /* Slightly larger icon */
+  margin-bottom: 10px; /* Space between icon and text */
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-item p {
-  font-size: 14px;
-  font-weight: 500;
-  color: #333333;
-  /* Dark Gray */
+  font-size: 16px; /* Slightly larger text for better readability */
+  font-weight: 600; /* Slightly bolder text */
+  color: #333333; /* Dark Gray */
+  margin-top: 5px; /* Adds space between the icon and text */
+  transition: color 0.3s ease;
+}
+
+.icon-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Adds shadow when hovering */
 }
 
 .icon-item:hover i {
-  color: #FFD700;
-  transform: scale(1.1);
+  color: #FFD700; /* Golden color on hover */
+  transform: scale(1.3); /* Bigger scale for more impact */
+}
+
+.icon-item:hover p {
+  color: #FFD700; /* Changes text color on hover */
+  font-weight: 700; /* Makes text bold on hover */
 }
 
 /* --------x------------x-------x-----------x-----------x---------------------- */
@@ -201,22 +215,24 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  row-gap: 40px; 
   max-width: 1100px;
   width: 100%;
   padding: 0 10px;
 }
 
-.coffee-card, .bakery-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
+  .coffee-card, .bakery-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
 
 .coffee-card-img, .bakery-card-img {
   width: 100%;
@@ -245,19 +261,38 @@ body {
 }
 
 button {
-  display: block;
-  margin: 30px auto;
-  padding: 7px;
-  background-color: #007BFF;
+  display: block; /* Ensures the button behaves as a block element */
+  margin: 20px auto; /* Centers the button horizontally */
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff7f50, #ff4500);
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
   font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center; /* Centers text inside the button */
 }
 
 button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(135deg, #ff6347, #e63946);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 69, 0, 0.7);
+}
+.showmoreButton{
+  margin-top:20px ;
 }
 
 .coffee-card-footer, .bakery-card-footer {
@@ -268,20 +303,10 @@ button:hover {
   width: 100%;
   gap: 110px; /* Adjust the gap between price and button */
 }
-
-.add-button {
-  padding: 5px 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
+.showmoreButton {
+  margin-top: 40px; /* Adjust this value to change the gap above the button */
 }
 
-.add-button:hover {
-  background-color: #218838;
-}
 
 
 /* ankjsd----------------------------------------------------------- */
@@ -289,7 +314,7 @@ button:hover {
 #app {
   text-align: center;
   padding: 3rem;
-  background-color: #f8f5f0; /* Light beige background */
+  background-color: #f1f0ee; /* Light beige background */
   padding-bottom: 7%;
 }
 
@@ -305,7 +330,7 @@ button:hover {
 }
 
 .testimonial-card {
-  background-color: #ffffff; /* White background */
+  background-color: #eeebe6; /* White background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
   padding: 2rem; /* Increased padding */
@@ -414,8 +439,8 @@ button:hover {
 
 /* Footer section styling */
 .footer {
-  background-color: #f8f4eb; /* Light beige background */
-  color: #4a4a4a; /* Neutral text color */
+  background-color: #30261c; /* Light beige background */
+  color: #b5aca8; /* Neutral text color */
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
@@ -433,7 +458,7 @@ button:hover {
 .footer .footerlogo {
   font-size: 30px;
   font-weight: bold;
-  color: #4a4a4a;
+  color: #b5aca8;
   flex: 1; /* Ensure logo takes equal space */
   text-align: left; /* Align to the left */
   margin-top: 20px;
@@ -464,7 +489,7 @@ button:hover {
 
 .footer-section ul li a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: #b5aca8;
   font-size: 14px;
   transition: color 0.3s ease;
 }
@@ -494,7 +519,7 @@ button:hover {
 
 .social-icons li a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: #b5aca8;
   font-size: 18px; /* Adjust size */
   transition: color 0.3s ease;
 }
@@ -506,24 +531,9 @@ button:hover {
 /* Footer bottom section */
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 14px;
-  color: #6a6a6a;
+  color: #b5aca8;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .footer-section {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-}

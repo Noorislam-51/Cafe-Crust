@@ -10,7 +10,7 @@ function FirstPage() {
         <div className='section1' id='home'>
           <div className='intro'>
             <h1><span>Welcome!</span>
-              We serve the richest coffe <br />
+              We serve the richest coffee <br />
               in the city</h1>
           </div>
           <div className='intropic'>

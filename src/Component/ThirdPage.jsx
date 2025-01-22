@@ -87,13 +87,7 @@ const ThirdPage = () => {
         </Swiper>
 
       </div>
-      <div class="icon-section">
-        <div class="icon-item">
-          <i class="fas fa-mug-hot"></i>
-          <p>Hot Coffee</p>
-        </div>
-
-      </div></>
+      </>
   );
 };
 
