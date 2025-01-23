@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <header class="header">
 
-        <div class="logo">MyLogo</div>
+        <div class="logo" >Café Crust</div>
 
 
         <nav class="nav">
@@ -20,7 +20,7 @@ const Header = () => {
               <a class="nav-link" href="#BakeryPage">BAKERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/testimonial">TESTIMONIAL</a>
+              <a class="nav-link" href="#app">TESTIMONIAL</a>
             </li>
           </ul>
         </nav>

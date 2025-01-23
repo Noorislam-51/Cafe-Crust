@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lobster&family=Montserrat&family=Pacifico&family=Great+Vibes&display=swap');
 
 /* General Reset */
 * {
@@ -35,9 +36,10 @@ body {
 }
 
 .logo {
-  font-size: 24px;
+  font-family: 'Playfair Display', serif; 
+  font-size: 26px;
   font-weight: bold;
-  color: #6a4c3b;
+  color: #000000;
   /* Coffee brown */
 }
 
@@ -102,18 +104,34 @@ body {
   align-items: center;
   padding: 20px;
   height: calc(85vh - 80px); /* Adjust height to account for the header */
-  
   position: relative; /* Needed for absolute positioning of the pseudo-element */
-  
-  /* Background Image */
-  background-image: url('https://images.unsplash.com/photo-1535570404806-e8df211dc94a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-repeat: no-repeat; /* Ensure the image doesn't repeat */
-  background-size: cover; /* Make the image cover the entire div */
-  background-position: center; /* Center the image */
 
-  /* Optional: Background Color as fallback or overlay */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  /* Background Image */
+  background-image: url('https://files.oaiusercontent.com/file-9CQGdjDiqreVQSmKgt79w4?se=2025-01-23T15%3A50%3A41Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3370a52e-d1c3-4f37-9afb-b7573629d57d.webp&sig=zLL%2BotuLbEE3mGFG%2BazCCxNTkkHSH5BSqhV99KrpIi4%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Ensures the content is on top */
+  overflow: hidden; /* Prevents pseudo-element overflow */
 }
+
+.section1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Places the blur behind content */
+  
+  /* Background and Blur Effect */
+  background-image: inherit; /* Use the same background as .section1 */
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  filter: blur(3px); 
+}
+
 
 
 
@@ -316,6 +334,10 @@ button:focus {
   padding: 3rem;
   background-color: #f1f0ee; /* Light beige background */
   padding-bottom: 7%;
+}
+#app h4{font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  
 }
 
 .menu-title {

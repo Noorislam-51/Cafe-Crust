@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import axios from 'axios';
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
@@ -53,6 +54,7 @@ const testimonials = [
     rating: 4,
     feedback: "A cozy place to relax during my travels. The cappuccino was excellent."
   }
+ 
 ];
 
 const ThirdPage = () => {
