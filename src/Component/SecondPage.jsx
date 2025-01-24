@@ -166,10 +166,10 @@ const SecondPage = () => {
         </button>
       </div>
 
-      <div className="icon-section">
+      <div className="icon-section sec" >
         <div className="icon-item">
           <i className="fas fa-mug-hot"></i>
-          <h1>Join in and get 15% Off!</h1>
+          <h1>Be Part of the Coffee Lovers' Circle!</h1>
           <p></p>
         </div>
       </div>

@@ -1,0 +1,151 @@
+/* Responsive Design */
+
+/* General Responsive Adjustments */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background: white;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .search-input {
+    width: 150px;
+  }
+
+  .section1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro {
+    padding: 50px;
+  }
+
+  .coffee-menu-grid, .bakery-menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Devices (Tablets & Phones) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+
+  .section1 {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .coffee-menu-grid, .bakery-menu-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .icon-section {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .subscription-form {
+    flex-direction: column;
+  }
+
+  .subscription-form input[type="email"] {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .subscription-form button {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 15px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .intro {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .icon-item i {
+    font-size: 28px;
+  }
+
+  .coffee-menu-grid, .bakery-menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

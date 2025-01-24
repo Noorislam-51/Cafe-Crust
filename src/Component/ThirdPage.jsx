@@ -54,7 +54,7 @@ const testimonials = [
     rating: 4,
     feedback: "A cozy place to relax during my travels. The cappuccino was excellent."
   }
- 
+
 ];
 
 const ThirdPage = () => {
@@ -89,7 +89,15 @@ const ThirdPage = () => {
         </Swiper>
 
       </div>
-      </>
+      <div class="subscription-section">
+        <h2>Join in and get 15% Off!</h2>
+        <p>Subscribe to our newsletter and get 15% off discount code.</p>
+        <form class="subscription-form">
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </>
   );
 };
 

@@ -172,8 +172,7 @@ body {
   align-items: center;
   height: calc(100vh - (85vh - 80px));
   gap: 60px; /* Slightly reduced gap for a tighter layout */
-  padding: 10px 0; /* Increased padding for spacing */
-  border-radius: 15px; /* Rounded corners for a modern look */
+  
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -202,7 +201,6 @@ body {
 
 .icon-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Adds shadow when hovering */
 }
 
 .icon-item:hover i {
@@ -222,6 +220,7 @@ body {
   text-align: center;
   font-size: 1.5rem;
   margin: 20px 0;
+  margin-top: 4%;
 }
 
 .coffee-menu, .bakery-menu {
@@ -240,7 +239,7 @@ body {
 }
 
   .coffee-card, .bakery-card {
-    background-color: #fff;
+    background-color: whitesmoke;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -254,20 +253,20 @@ body {
 
 .coffee-card-img, .bakery-card-img {
   width: 100%;
-  height: 250px;
+  height: 230px;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 7px;
 }
 
 .coffee-card-title, .bakery-card-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin: 0px 0px;
 }
 
 .coffee-card-intro, .bakery-card-intro {
-  font-size: .75rem;
+  font-size: .70rem;
   color: #666;
   margin: 0px 0px;
 }
@@ -281,7 +280,7 @@ body {
 button {
   display: block; /* Ensures the button behaves as a block element */
   margin: 20px auto; /* Centers the button horizontally */
-  padding: 10px 20px;
+  padding: 7px 20px;
   background: linear-gradient(135deg, #ff7f50, #ff4500);
   color: white;
   font-size: 1rem;
@@ -322,8 +321,8 @@ button:focus {
   gap: 110px; /* Adjust the gap between price and button */
 }
 .showmoreButton {
-  margin-top: 40px; /* Adjust this value to change the gap above the button */
-}
+  margin-top: 40px;
+  margin-bottom: 4%;}
 
 
 
@@ -332,18 +331,18 @@ button:focus {
 #app {
   text-align: center;
   padding: 3rem;
-  background-color: #f1f0ee; /* Light beige background */
   padding-bottom: 7%;
 }
-#app h4{font-family: 'Great Vibes', cursive;
+#app h4{
+  font-family: 'Great Vibes', cursive;
   font-size: 2rem;
+  margin: -5px;
   
 }
 
 .menu-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
   color: #333; /* Dark gray color */
 }
 
@@ -352,7 +351,7 @@ button:focus {
 }
 
 .testimonial-card {
-  background-color: #eeebe6; /* White background */
+  background-color:  whitesmoke; /* White background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
   padding: 2rem; /* Increased padding */
@@ -418,6 +417,57 @@ button:focus {
   gap: 2rem;
   flex-wrap: wrap;
 }
+.subscription-section {
+  text-align: center; 
+  padding: 3% 0%;
+  background-color: #f0f0f0; /* Lighter background for contrast */
+ 
+  /* gap: 60px;  */
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  
+}
+
+.subscription-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px; /* Reduce spacing below the paragraph */
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center; /* Center input and button horizontally */
+  align-items: center; /* Align input and button vertically */
+  gap: 10px; /* Add a small space between input and button */
+  margin-top: 10px; /* Add space between the paragraph and the form */
+}
+
+.subscription-form input[type="email"] {
+  padding: 11px 15px;
+    font-size: 16px;
+    margin-left: 35%;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 300px;
+}
+
+.subscription-form button {
+  padding: 12px 20px; /* Add padding for the button */
+  font-size: 16px;
+  background-color: #8b5e34;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  margin-left: -5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscription-form button:hover {
+  background-color: #704725;
+}
+
+
 
 /* ankjsd----------------------------------------------------------- */
 .footer {
@@ -553,9 +603,9 @@ button:focus {
 /* Footer bottom section */
 .footer-bottom {
   text-align: center;
-  margin-top: 10%;
   font-size: 14px;
   color: #b5aca8;
+
 }
 
 
