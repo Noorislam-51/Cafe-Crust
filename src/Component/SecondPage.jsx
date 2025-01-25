@@ -123,10 +123,10 @@ const SecondPage = () => {
       {/* Coffee menu */}
       <div id='CoffeePage'>
         <h3 className="menu-title">OUR SPECIAL DISH</h3>
-        <div className="coffee-menu">
+        <div className="coffee-menu" >
           <div className="coffee-menu-grid">
             {displayedCoffeeCards.map((item, index) => (
-              <div key={index} className="coffee-card">
+              <div key={index} className="coffee-card"  data-aos="flip-left">
                 <img src={item.img} className="coffee-card-img" alt={item.name} />
                 <h2 className="coffee-card-title">{item.name}</h2>
                 <h4 className="coffee-card-intro">{item.intro}</h4>
@@ -138,18 +138,18 @@ const SecondPage = () => {
             ))}
           </div>
         </div>
-        <button className='showmoreButton' onClick={toggleCoffeeCards}>
+        <button className='showmoreButton' data-aos="zoom-in" onClick={toggleCoffeeCards}>
           {showAllCoffee ? 'Show Less' : 'Show More'}
         </button>
       </div>
 
       {/* Bakery menu */}
       <div id='BakeryPage'>
-        <h3 className="menu-title">OUR SPECIAL BAKERY ITEMS</h3>
+        <h3 className="menu-title" data-aos="zoom-right">OUR SPECIAL BAKERY ITEMS</h3>
         <div className="bakery-menu">
           <div className="bakery-menu-grid">
             {displayedBakeryCards.map((item, index) => (
-              <div key={index} className="bakery-card">
+              <div key={index} className="bakery-card"  data-aos="flip-left">
                 <img src={item.img} className="bakery-card-img" alt={item.name} />
                 <h2 className="bakery-card-title">{item.name}</h2>
                 <h4 className="bakery-card-intro">{item.intro}</h4>
@@ -161,12 +161,12 @@ const SecondPage = () => {
             ))}
           </div>
         </div>
-        <button className='showmoreButton' onClick={toggleBakeryCards}>
+        <button className='showmoreButton' data-aos="zoom-in" onClick={toggleBakeryCards}>
           {showAllBakery ? 'Show Less' : 'Show More'}
         </button>
       </div>
 
-      <div className="icon-section sec" >
+      <div className="icon-section " data-aos="zoom-right" >
         <div className="icon-item">
           <i className="fas fa-mug-hot"></i>
           <h1>Be Part of the Coffee Lovers' Circle!</h1>

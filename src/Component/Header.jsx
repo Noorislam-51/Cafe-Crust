@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <>
-      <header class="header">
+      <header class="header" data-aos="fade-down" data-aos-once="true">
 
         <div class="logo" >Café Crust</div>
 

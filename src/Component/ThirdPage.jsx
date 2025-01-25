@@ -58,11 +58,12 @@ const testimonials = [
 ];
 
 const ThirdPage = () => {
+  
   return (
     <>
       <div id="app">
-        <h4 >welcome</h4>
-        <h3 className="menu-title">OUR HAPPY CUSTOMERS</h3>
+        <h4 data-aos="zoom-right">welcome</h4>
+        <h3 className="menu-title" data-aos="fade-right">OUR HAPPY CUSTOMERS</h3>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -89,7 +90,7 @@ const ThirdPage = () => {
         </Swiper>
 
       </div>
-      <div class="subscription-section">
+      <div class="subscription-section" data-aos="zoom-in">
         <h2>Join in and get 15% Off!</h2>
         <p>Subscribe to our newsletter and get 15% off discount code.</p>
         <form class="subscription-form">
