@@ -120,7 +120,7 @@
 
   .coffee-card-footer,
   .bakery-card-footer {
-    gap: 180px;
+    gap: 140px;
     margin-left: 10px;
   }
   .testimonial-container {
@@ -139,6 +139,9 @@
     width: 70px;
     height: 70px;
   }
+  .icon-section {
+    gap: 40px;
+}
   .testimonial-name {
     font-size: 1.1rem;
    
@@ -162,6 +165,16 @@
     padding: 11px 15px;
     margin-left: 13%;
     width: 200px;
+}
+.subscription-form {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
 }
   
 .footer-container {
