@@ -75,7 +75,7 @@ const ThirdPage = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="testimonial-card">
+              <div className="testimonial-card" data-aos="zoom-in">
                 <img
                   src={testimonial.img}
                   alt={testimonial.name}
@@ -90,7 +90,7 @@ const ThirdPage = () => {
         </Swiper>
 
       </div>
-      <div class="subscription-section" data-aos="zoom-in">
+      <div class="subscription-section" data-aos="zoom-right">
         <h2>Join in and get 15% Off!</h2>
         <p>Subscribe to our newsletter and get 15% off discount code.</p>
         <form class="subscription-form">

@@ -1,44 +1,58 @@
-import React from 'react'
+import React, { useState } from "react";
+// import "./Header.css"; // Import the CSS file
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
-      <header class="header" data-aos="fade-down" data-aos-once="true">
+      <header className="header" data-aos="fade-down" data-aos-once="true">
+        <div className="logo">Café Crust</div>
 
-        <div class="logo" >Café Crust</div>
-
-
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#FirstPage">HOME</a>
+        <nav className={`nav ${menuOpen ? "active" : ""}`}>
+          <ul className="nav-list">
+            <li className="nav-item">
+              <a className="nav-link" href="#FirstPage">
+                HOME
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#CoffeePage">COFFEE</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#CoffeePage">
+                COFFEE
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#BakeryPage">BAKERY</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#BakeryPage">
+                BAKERY
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#app">TESTIMONIAL</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#app">
+                TESTIMONIAL
+              </a>
             </li>
           </ul>
         </nav>
-        <div class="search">
+
+        <div className="search">
           <input
             type="text"
-            class="search-input"
+            className="search-input"
             placeholder="Search..."
             aria-label="Search"
           />
         </div>
+
+        <div className="hamburger" onClick={toggleMenu}>
+          ☰
+        </div>
       </header>
-
-
-
-
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,151 +1,199 @@
 /* Responsive Design */
-
-/* General Responsive Adjustments */
 @media (max-width: 1024px) {
   .header {
+    padding: 10px 30px;
+  }
+
+  .nav-list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
     padding: 10px 20px;
+  }
+
+  .nav {
+    display: none;
+    /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    display: flex;
+    /* Show when active */
   }
 
   .nav-list {
     flex-direction: column;
-    display: none;
-    position: absolute;
-    background: white;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
     padding: 10px 0;
-  }
-
-  .nav-list.active {
-    display: flex;
   }
 
   .nav-item {
     margin: 10px 0;
   }
 
-  .search-input {
-    width: 150px;
+  .hamburger {
+    display: block;
   }
 
-  .section1 {
-    flex-direction: column;
-    text-align: center;
+  .footer-section h4 {
+    font-size: 14px;
+
+  }
+  .coffee-card-footer, .bakery-card-footer {
+    
+    gap: 18px;
+}
+
+  .subscription-form input[type="email"] {
+    padding: 11px 15px;
+
+    margin-left: 20%;
+
+    width: 291px;
   }
 
-  .intro {
-    padding: 50px;
-  }
-
-  .coffee-menu-grid, .bakery-menu-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .coffee-card-img,
+  .bakery-card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 7px;
   }
 }
 
-/* Mobile Devices (Tablets & Phones) */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .nav {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .search {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .search-input {
-    width: 80%;
-  }
-
-  .section1 {
-    padding: 20px;
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
   }
 
   .intro h1 {
+    color: #ffffff;
     font-size: 2rem;
   }
 
-  .coffee-menu-grid, .bakery-menu-grid {
-    grid-template-columns: repeat(1, 1fr);
+  .icon-item i {
+    font-size: 25px;
   }
 
-  .icon-section {
-    flex-direction: column;
-    height: auto;
-    gap: 20px;
-  }
 
-  .subscription-form {
-    flex-direction: column;
+  .icon-item p {
+    font-size: 14px;
   }
-
-  .subscription-form input[type="email"] {
-    width: 80%;
-    margin-left: 0;
-  }
-
-  .subscription-form button {
-    width: 50%;
-    margin-left: 0;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-section {
-    margin-bottom: 15px;
-  }
+  .subscription-section p {
+   
+    padding: 10px;
 }
 
-/* Small Mobile Screens */
-@media (max-width: 480px) {
-  .logo {
-    font-size: 22px;
+  .menu-title {
+    font-size: 1.5rem;
   }
 
-  .intro {
-    padding: 20px;
+  .nav-link {
+    font-size: 14px;
   }
 
-  .intro h1 {
-    font-size: 1.8rem;
+  .header {
+    padding: 10px;
   }
 
-  .icon-item i {
-    font-size: 28px;
-  }
 
   .coffee-menu-grid, .bakery-menu-grid {
-    grid-template-columns: 1fr;
+   display: flex;
+   flex-direction: column;
+    gap: 20px;
+    row-gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+  .coffee-card-footer,
+  .bakery-card-footer {
+    gap: 275px;
+    margin-left: 10px;
+  }
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
   }
 
   .testimonial-card {
-    width: 90%;
+    width: 90%; /* Adjust width to fit smaller screens */
+    max-width: 300px; /* Prevents overly wide cards */
+    height: auto; /* Allow flexibility */
+    padding: 1.5rem;
   }
 
-  .footer-container {
-    text-align: center;
+  .testimonial-img {
+    width: 70px;
+    height: 70px;
   }
+  .testimonial-name {
+    font-size: 1.1rem;
+   
+}
+.testimonial-feedback {
+  font-size: 0.8rem;
+  
+}
 
-  .social-icons {
-    justify-content: center;
+  .testimonial-heading {
+    font-size: 1.8rem;
   }
+  body,
+  h1,
+  ul,
+  li {
+
+    font-size: 18px;
+  }
+  .subscription-form {
+   
+    margin-left: -104px;
+}
+
+  
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .footerlogo {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+
+.footer-section,
+.footer-social {
+  flex: 1;
+  text-align: center;
+  min-width: 100px;
+}
+
+.social-icons {
+  justify-content: center;
+}
+
+
 }

@@ -13,9 +13,6 @@ function FirstPage() {
               We serve the richest coffee <br />
               in the city</h1>
           </div>
-          <div className='intropic' >
-            {/* <img src="https://cdni.iconscout.com/illustration/premium/thumb/waiter-and-waitress-holding-a-tray-with-coffee-illustration-download-in-svg-png-gif-file-formats--serving-tea-pack-people-illustrations-5417942.png" alt="Italian Trulli" /> */}
-          </div>
           
         </div>
         

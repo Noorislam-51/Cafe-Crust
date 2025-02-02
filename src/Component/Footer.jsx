@@ -3,8 +3,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer className="footer" data-aos="fade-up"  data-aos-duration="3000" >
+      <div className="footer-container" >
         <div class="footerlogo">Café Crust</div>
         <div className="footer-section">
           <h4>PRIVACY</h4>
