@@ -120,7 +120,7 @@
 
   .coffee-card-footer,
   .bakery-card-footer {
-    gap: 275px;
+    gap: 180px;
     margin-left: 10px;
   }
   .testimonial-container {
@@ -158,11 +158,11 @@
 
     font-size: 18px;
   }
-  .subscription-form {
-   
-    margin-left: -104px;
+  .subscription-form input[type="email"] {
+    padding: 11px 15px;
+    margin-left: 13%;
+    width: 200px;
 }
-
   
 .footer-container {
   flex-direction: column;
